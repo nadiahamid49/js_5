@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ebe3cd;
+}
+
+
+h1{
+    font-family: 'Playfair Display', black;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* common css end */ 
+
+#primary-menu{
+    background-color: #12202f;
+    border-radius: 20px;
+    margin: 95px 57px 0 ;
+    padding: 27px 0 27px 0;
+}
+#primary-menu ul li{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 17.48px;
+    line-height: 35.36px; 
+    margin-left: 74px;
+    
+}
+#primary-menu ul li a {
+    color: #ffffff;
+    text-transform: capitalize;
+
+}
+#primary-menu ul li a:hover::after{
+content: '';
+width: 100%;
+background: #fff;
+height: 3px;
+display: block;
+margin: auto;
+transition: .5s;
+}
+#primary-menu .fa-solid{
+    margin-left: 100px;
+    color: #fff;
+}
+#primary-menu .fa-solid:hover{
+    color: #df581e;
+}
+#primary-menu button{
+    background: none;
+    border: none;
+    color: #569682;
+    margin-left: 40px;
+    font-size: 17.48px;
+    font-weight: 400;
+    line-height: 35.36px;
+    cursor: pointer;
+
+}
+/*hero section start  */
+#hero{
+    background-image: url(./../image/section-1-pic.png);
+    background-repeat: no-repeat; 
+    background-position: right;
+    min-height: 100vh;
+}
+#hero h1{
+    font-size: 80px;
+    line-height: auto;
+    font-weight: 700;
+    color: #12202f;
+    padding-top: 80px;
+}
+#hero h2{
+    font-size: 28.77px;
+    line-height: 39.77px;
+    font-weight: 400;
+    color: #12202f;
+}
+#hero p{
+    font-size: 16px;
+    line-height: 31.08px;
+    color: #12202f;
+    font-weight: 600;
+}
+#hero button{
+    margin-top: 45px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #12202f;
+    font-weight: 700;
+    font-size: 21.06px;
+    line-height: 32px;
+    text-transform: capitalize;
+
+}
+#hero button:hover{
+    background-color: #df581e;
+    color: #ffffff;
+}
+/* hero section end */
+
+     
+/* search start */
+#search{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.9);
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: .5s;
+}
+#search form{
+    width: 40%;
+    border: 2px solid salmon;
+    padding: 15px 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#search form input{
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 19px ;
+}
+#search form button{
+    border: none;
+    background: none;
+    color: #fff;
+
+}
+#search-closebtn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: salmon;
+    color: #fff;
+    border: none;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+/* search end */
+
+
+/* signup start */
+#sign_up{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.9);
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: .5s;
+}
+#sign_up form{
+    width: 30%;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding: 50px;
+    background:rgba(255, 255, 255, 0.3);
+}
+#sign_up form input{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 40px 10px 15px;
+    border: none;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    border-radius: 5px;
+}
+#sign_up form .input_style{
+    position: relative;
+}
+#sign_up form .input_style button{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    background: none;
+}
+#sign_up form> button{
+    background-color: #569682;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#pass-closebtn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: salmon;
+    color: #fff;
+    border: none;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+/* sign up end */
+
+/* sidebar start */
+#sidebar{
+    display: flex;
+    justify-content: end;
+    
+}
+.side_menu{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    transform: scale(0);
+    transition: .5s;
+
+}
+.side_menu i{
+    padding: 30px 10px;
+    color: #fff;
+}
+.side_menu span{
+    color: #fff;
+}
+.side_menu li{
+    border-bottom: 1px solid #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.side_menu li:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+
+}
+.side_menu .c_btn button{
+    background: none;
+    border: none;
+    padding:0 0 0 150px;
+    cursor: pointer;
+
+}
+/* sidebar end */
